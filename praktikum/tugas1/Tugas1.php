@@ -11,7 +11,7 @@ Modul 1 Stuktur Kontrol
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tugas1a | 203040065</title>
+    <title>Tugas1 | 203040065</title>
     <style>
     .blue{
         background-color: lightblue;
