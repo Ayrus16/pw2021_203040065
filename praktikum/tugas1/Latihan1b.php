@@ -11,7 +11,7 @@ Modul 1 Stuktur Kontrol
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Latihanb</title>
 </head>
 <body>
     <table border="1" cellspacing="0" cellpadding="10">

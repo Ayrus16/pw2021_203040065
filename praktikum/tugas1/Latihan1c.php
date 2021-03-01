@@ -11,7 +11,7 @@ Modul 1 Stuktur Kontrol
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Latihan1a | 203040065</title>
+    <title>Latihan1c | 203040065</title>
     <style>
     .clear{
     clear: left;
