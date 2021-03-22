@@ -42,7 +42,7 @@ $sepatu = query("SELECT * FROM sepatu");
                         <img style="width: 100%;" src="assets/<?= $spt['img'] ?>">
                     </div>
                     <div class="card-content p-2">
-                        <a href="php/detail.php?id=<?= $spt["id"] ?>"><?= $spt["nama"] ?> </a>
+                        <a class="text-center" href="php/detail.php?id=<?= $spt["id"] ?>"><?= $spt["nama"] ?> </a>
                     </div>
                 </div>
             </div>

@@ -26,20 +26,24 @@ $sepatu = query("SELECT * FROM sepatu WHERE id = $id")[0];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Latihan4c | 203040065</title>
 </head>
 <body>
     <div class="container">
-        <img class="image" src="../assets/<?= $sepatu['img'] ?>" alt="">
-        <p><?= $sepatu['nama']?></p>
-        <a href="../index.php"><button class="button success">More</button> </a>
+        <div class="detail">
+            <img class="image" src="../assets/<?= $sepatu['img'] ?>" alt="">
+            <h3><?= $sepatu['brand']?> <?= $sepatu['nama']?></h3>
+            <hr>
+            <h6>Brand : <?= $sepatu['brand']?> | Color : <?= $sepatu['warna']?> | Price : $<?= $sepatu['harga']?></h6>
+            <a href="../index.php"><button class="button success"> Back</button> </a>
+        </div>
     </div>
 
 
 <!-- Metro - 4 -->
-<!-- <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script> -->
+<script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
 </body>
 </html>
