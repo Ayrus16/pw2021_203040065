@@ -34,7 +34,6 @@ $sepatu = query("SELECT * FROM sepatu");
     <div class="grid">
         <div class="row">
             <?php 
-            $i = 1;
             foreach ($sepatu as $spt) :
             ?>
             <div class="cell-md-3">
