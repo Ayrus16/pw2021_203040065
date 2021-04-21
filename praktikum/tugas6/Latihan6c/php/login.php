@@ -27,7 +27,7 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['hash'])){
     }
 }
 
-// melakukan pengecekan apakah user sudah login
+// Melakukan pengecekan apakah user sudah login
 if(isset($_SESSION['username'])){
     header("Location: admin.php");
     exit;

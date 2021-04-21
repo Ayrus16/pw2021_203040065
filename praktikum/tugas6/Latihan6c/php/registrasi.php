@@ -21,6 +21,7 @@ if(isset($_POST["register"])){
         alert('Registrasi Gagal');
         </script>";
     }
+    
 }
 
 ?>

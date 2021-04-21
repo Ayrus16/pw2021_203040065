@@ -9,7 +9,7 @@ Modul-6 Session, Cookie, Encryption
 ?>
 
 <?php
-// Koneksi Database
+// Koneksi ke Database
 function koneksi(){
     $conn = mysqli_connect("localhost", "root","");
     mysqli_select_db($conn, "pw_tubes_203040065");

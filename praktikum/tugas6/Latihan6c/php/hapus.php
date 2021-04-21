@@ -14,7 +14,7 @@ if(!isset($_SESSION["username"])){
     header("Location: login.php");
     exit;
 }
-// Menghubungkan dengan file php lainya
+// Menghubungkan dengan file php lainnya
 require'function.php';
 $id = $_GET['id'];
 

@@ -15,6 +15,7 @@ if(!isset($_GET['id'])){
 
 require '../php/function.php';
 $id=$_GET["id"];
+
 //melakukan query
 $sepatu = query("SELECT * FROM sepatu WHERE id = $id")[0];
 ?>
