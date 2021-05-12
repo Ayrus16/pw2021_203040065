@@ -3,10 +3,10 @@
     <div class="col-md-4 col-sm-11 col-xs-11">
       <div class="footer-text pull-left">
         <div class="d-flex company-brand">
-          <img src="assets/img/logo-color.png" width="50px" alt="" class="brand-logo">
+          <img src="assets/img/logo-color.png" width="60px" alt="" class="brand-logo">
           <h1>X<span>Raa</span></h1>
         </div>
-        <p class="card-text">Raa is the global platform for style base in indonesia. Founded in 2020 to bring trust to the sneaker community</p>
+        <p class="card-text">XRaa is the global platform for style base in indonesia. Founded in 2020 to bring trust to the sneaker community</p>
       </div>
     </div>
 

@@ -39,9 +39,6 @@ $sepatu = query("SELECT * FROM sepatu");
     <?php include('element/header.php'); ?>
 
     <section class="home" id="home">
-        <!-- <div class="img-container">
-            <img src="assets/img/bg1.jpg">
-        </div> -->
         <div class="poster text-center">
             <div class="container">
                 <h2 class="display2">THE PLACE</h2>
@@ -50,32 +47,45 @@ $sepatu = query("SELECT * FROM sepatu");
             </div>
         </div>
     </section>
+
+    <section class="product" id="product">
+        <div class="container">
+
+        </div>
+    </section>
+
+
+
     <div class="container">
-
-
-
-
         <a href="php/login.php">
             <button class="button yellow outline">Masuk ke halaman admin</button>
         </a>
-        <div class="grid">
-            <div class="row">
-                <?php
-                foreach ($sepatu as $spt) :
-                ?>
-                    <div class="cell-md-3">
-                        <div class="card">
-                            <div class="card-header">
-                                <img style="width: 100%;" src="assets/img/<?= $spt['img'] ?>">
-                            </div>
-                            <div class="card-content p-2 text-center">
-                                <a href="php/detail.php?id=<?= $spt["id"] ?>"><?= $spt["nama"] ?> </a>
-                            </div>
+
+        <section class="list-product">
+            <h2 class="udl">Our Product</h2>
+            <div class="grid">
+                <div class="row">
+                    <?php
+                    foreach ($sepatu as $spt) :
+                    ?>
+
+                        <div class="cell-md-3">
+                            <a href="php/detail.php?id=<?= $spt["id"] ?>">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img style="width: 100%;" src="assets/img/<?= $spt['img'] ?>">
+                                    </div>
+                                    <div class="card-content p-2 text-center">
+                                        <?= $spt["nama"] ?>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+
+                    <?php endforeach; ?>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
 

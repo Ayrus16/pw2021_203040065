@@ -12,11 +12,11 @@
           <li><a href="#">Nike</a></li>
           <li><a href="#">Adidas</a></li>
           <li class="divider bg-lightGray"></li>
-          <li><a href="#">Skype</a></li>
+          <li><a href="#">More</a></li>
         </ul>
       </li>
-      <li><a href="#">BLOG</a></li>
       <li><a href="#">CONTACT</a></li>
+      <li><a href="#">ADMIN</a></li>
     </ul>
   </div>
 </div>

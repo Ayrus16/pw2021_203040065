@@ -1,3 +1,15 @@
+@font-face{
+	font-family: 'Lato-regular';
+	src: url('../assets/font/Lato/Lato-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'OpenSans-regular';
+	src: url('../assets/font/OpenSans/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
@@ -59,13 +71,10 @@ body {
     background-color: transparent !important;
 }
 
-.navbar-colored .d-menu {
+.d-menu {
     background-color: #020100ff !important;
 }
 
-.navbar-transparent .d-menu {
-    background-color: transparent !important;
-}
 
 .app-bar-menu a {
     font-size: 14px !important;
@@ -123,7 +132,7 @@ html:hover .home .udl {
     letter-spacing: 5px;
 }
 
-/* ITEM */
+/* List Product */
 .card {
     min-height: 250px;
     margin-top: 30px;
@@ -136,6 +145,7 @@ html:hover .home .udl {
 
 .card-header {
     min-height: 180px !important;
+    border-bottom: none !important;
 }
 
 a {
@@ -151,11 +161,74 @@ a {
     margin: 0 auto;
     text-align: center;
 }
+.list-product:hover .udl{
+    background-size: 100% 2px;
+}
 
+/* Product */
+.controls-top .btn{
+    border: solid 1px #646771;
+    color: #646771;
+    margin: 5px;
+}
+.controls-top .btn:focus{
+    box-shadow: 0px 0px 5px #646771;
+}
+.controls-top .btn:hover{
+    border: solid 1px #141414;
+    color: #141414
+}
+.product .container{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
 
+.product .udl {
+    background-size: 0% 22px;
+    background-position: 0% 100%;
+    transition: background 1s ease-in-out;
+}
+.product:hover  .udl {
+    background-size: 100% 22px;
+}
+.product h3{
+    margin-top: 25px;
+}
 
+.product h6{
+    letter-spacing: 2px;
+}
+.product .card-img-top{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+.product .carousel{
+    border:  solid 1px #141414;
+}
+.product .card{
+    border:  none;
+    background-color: transparent;
+}
+.product .card-body {
+    padding-top: 0px;
+}
 
+.product .poster{
+    background-position: 100% 0% !important;
+}
 
+.back-element {
+    background-size: 45% 100% !important;
+}
+  
+.back-element:hover {
+    background-size: 0% 100% !important;
+}
+
+.product img{
+    filter: drop-shadow(2px 2px 3px #222);
+}
 
 
 
@@ -170,15 +243,20 @@ a {
     color: #646771;
     background-color: #141414;
 }
+
 .footer .brand-logo{
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    margin : auto 0px
+
 }
 .footer .company-brand h1{
      color: #f1d302ff;
      margin-left: 10px;
      border-left: 2px solid rgba(189, 196, 203, 0.5);
      padding-left: 10px;
+     font-family: 'Lato-regular';
+     font-weight: bold;
 } 
 .footer .company-brand h1 span{
     color: white;
@@ -225,4 +303,7 @@ ul>li:hover {
 }
 .footer-content:hover .heading {
     background-size: 100% 2px;
+}
+.footer p{
+    margin-top: 0;
 }
