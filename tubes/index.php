@@ -5,7 +5,7 @@ Surya Putra Pratama
 Shift Jum'at 10.00 - 11.00
 
 
-Tugas Besar
+Tubes
 */
 ?>
 <?php
@@ -57,10 +57,6 @@ $sepatu = query("SELECT * FROM sepatu");
 
 
     <div class="container">
-        <a href="php/login.php">
-            <button class="button yellow outline">Masuk ke halaman admin</button>
-        </a>
-
         <section class="list-product">
             <h2 class="udl">Our Product</h2>
             <div class="grid">

@@ -16,7 +16,7 @@
         </ul>
       </li>
       <li><a href="#">CONTACT</a></li>
-      <li><a href="#">ADMIN</a></li>
+      <li><a href="php/login.php">ADMIN</a></li>
     </ul>
   </div>
 </div>
