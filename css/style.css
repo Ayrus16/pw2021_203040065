@@ -1,0 +1,245 @@
+
+@font-face{
+	font-family: 'Lato-regular';
+	src: url('../assets/font/Lato/Lato-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'OpenSans-regular';
+	src: url('../assets/font/OpenSans/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+.udl {
+  display: inline;
+  background-image: linear-gradient(#f1d302ff, #f1d302ff);
+  background-size: 0% 2px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background .5s ease-out;
+}
+
+.udl:hover {
+  background-size: 100% 2px;
+}
+/* ---------------------------------- home ---------------------------------- */
+
+.home .poster {
+  background: url("../assets/img/home.png")no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 650px;
+  margin-bottom: 0;
+  filter: background brightness(60%);
+  text-align: left;
+}
+.home .container{
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+
+.home h2 {
+  top: 90% !important;
+  display: inline-block;
+  font-size: 64px;
+  font-weight: bold !important;
+  color: #fdfffcff !important;
+  margin :0 10px !important;
+  position: relative;
+  font-family: 'OpenSans-regular';
+}
+.home .udl{
+  background-size: 100% 6px;
+  background-position: 0% 90%;
+  transition: background .5s ease !important;
+  background-image: linear-gradient(rgba(242, 210, 2, .6), rgba(242, 210, 2, .6)) !important;
+}
+body:hover .home .udl {
+  background-size: 100% 20px;
+  background-image: linear-gradient(rgba(242, 210, 2, .6), rgba(242, 210, 2, .6)) !important;
+}
+.home h3 {
+  top: 90% !important;
+  display: block;
+  font-size: 36px;
+  font-weight: bold !important;
+  color: #fdfffcff !important;
+  margin :0 10px !important;
+  position: relative;
+  font-family: 'Lato-regular';
+}
+.home .copyright {
+  float: left;
+  position: relative;
+  margin-left: 15px !important;
+  display: block;
+  font-size: 18px;
+  color: #fdfffcff;
+  position: absolute;
+  bottom: 20px;
+  
+}
+.home .copyright a{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #fdfffcff;
+}
+.home .copyright a:hover{
+  color: yellow;
+  
+}
+
+/* -------------------------------- Scrollbar ------------------------------- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #020100ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1d302ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fdfffcff;
+}
+
+/* ----------------------------------- Nav ---------------------------------- */
+.navbar {
+  z-index: 9999;
+  margin: auto;
+  background-color: black !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.397);
+  padding: 0 !important;
+  
+}
+.logo{
+  top: 20px;
+  left: 30px;
+}
+.logo img{
+  width: 30px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+.logo{
+  top: 13px;
+  left: 30px;
+  position: fixed;
+}
+.logo img{
+  width: 30PX;
+}
+.links {
+  list-style: none;
+  margin-top: 0px;
+}
+
+.navbar-nav{
+  float: right;
+  box-sizing: border-box;
+}
+.navbar-nav a{
+  letter-spacing: 2px;
+  color: #f1d302;
+  text-transform: uppercase;
+  font-family: arial;
+  text-decoration: none;
+  padding: 21px;
+  transition: all .4s ease-out;
+}
+.navbar-nav a:hover {
+  color: black;
+  background-color: #f1d302;
+  font-weight: bold;
+}
+
+/* -------------------------------- About Me -------------------------------- */
+.about-me{
+  margin: 30px auto 70px auto;
+}
+.about-me .title{
+  font-size: 48px;
+  font-family: 'Lato-regular';
+  font-weight: 600 !important;
+}
+.about-me .content{
+  padding-top: 5%;
+}
+.about-me .content h2{
+  font-family: 'Lato-regular';
+  font-weight: 600 !important;
+  margin: 0;
+}
+.about-me .content h3{
+  font-family: 'OpenSans-regular';
+  font-weight: 400 !important;
+}
+.about-me .content p{
+  font-family: 'OpenSans-regular';
+  text-align: justify;
+}
+.about-me img{
+  display: block;
+  /* box-shadow: 0 0 0px 15px lightgray; */
+  margin: auto;
+}
+.about-me hr{
+  margin-bottom: 60px;
+}
+
+/* ---------------------------------- Tugas --------------------------------- */
+.tugas .container {
+  border-top: solid 2px black;
+}
+.tugas .title h2{
+  display: inline;
+  font-size: 36px;
+  font-family: 'Lato-regular';
+  font-weight: 600 !important;
+  background-color: #020100;
+  padding: 12px 40px;
+  color: #fdfffc;
+  border-radius: 0 0 10px 10px;
+}
+
+.tugas .card{
+  border-radius:  30px!important;
+}
+
+.tugas .card-header{
+  line-height: 100px;
+  background-color: #222;
+  margin :0;
+  padding: 0 !important;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  border-radius:  30px 30px 0px 0px !important;
+}
+
+.tugas .btn-group{
+  margin: 5px;
+}

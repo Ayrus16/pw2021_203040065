@@ -14,10 +14,10 @@
     <div class="col-md-2 col-sm-4 col-xs-4 footer-content d-block">
       <h5 class="heading udl">Poppular Brands</h5>
       <ul class="card-text ">
-        <li>Nike</li>
-        <li>Adidas</li>
-        <li>Puma</li>
-        <li>Converse</li>
+        <li><a href="produk.php?keyword=nike">Nike</a></li>
+        <li><a href="produk.php?keyword=adidas">Adidas</a></li>
+        <li><a href="produk.php?keyword=puma">Puma</a></li>
+        <li><a href="produk.php?keyword=converse">Converse</a></li>
       </ul>
     </div>
 
