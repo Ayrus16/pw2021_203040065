@@ -25,7 +25,6 @@ if (isset($_POST['tambah'])) {
     } else {
         echo "<script>
         alert('Data Gagal ditambahkan!');
-        document.location.href='admin.php';
         </script>";
     }
 }
@@ -59,7 +58,7 @@ if (isset($_POST['tambah'])) {
                         <div class="title">
                             <p>Form Add Product</p>
                         </div>
-                        <form action="" method="post">
+                        <form action="" method="post" enctype="multipart/form-data">
                             <div class="field">
                                 <!-- Form nama -->
                                 <label for="nama">Product Name</label>

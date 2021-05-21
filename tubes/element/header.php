@@ -1,7 +1,7 @@
 <div class="container fg-light">
   <div class="navbar ml-auto" data-role="appbar" data-expand-point="md" id="mynav">
     <a href="index.php" class="brand no-hover">
-      <img src="assets/img/logo-color.png" alt="" width="50pxpx" id="nav-brand">
+      <img src="assets/img/logo-white.png" alt="" width="50pxpx" id="nav-brand">
     </a>
 
     <ul class="app-bar-menu fg-white ml-auto">

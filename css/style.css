@@ -221,7 +221,10 @@ body:hover .home .udl {
   background-color: #020100;
   padding: 12px 40px;
   color: #fdfffc;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
+}
+.tugas .title{
+  margin-bottom: 50px;
 }
 
 .tugas .card{
@@ -242,4 +245,35 @@ body:hover .home .udl {
 
 .tugas .btn-group{
   margin: 5px;
+}
+.tugas .card{
+  min-height: 650px;
+}
+.tugas .btn-group button{
+  background-color: transparent !important;
+  color: #222;
+  border-radius:  30px;
+  box-shadow: none !important;
+}
+.tugas .btn-group button:focus{
+  color: #fdfffc !important;
+  background-color: #222 !important;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+.footer{
+  margin-top: 50px;
+  min-height: 50px;
+  background-color: #222;
+  
+}
+.footer h5{
+  padding-top: 15px;
+  color: #fdfffc;
+  transition: all .3s ease-out;
+  
+}
+
+.footer:hover h5{
+  color: #f1d302;
 }
