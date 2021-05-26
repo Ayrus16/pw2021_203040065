@@ -132,16 +132,20 @@ html:hover .home .udl {
     letter-spacing: 5px;
 }
 
+
+
 /* ------------------------------ List Product ------------------------------ */
 .list-product{
     margin-bottom: 70px;
 }
 .list-product .card {
-    min-height: 250px;
-    margin-top: 30px;
+    min-height: 280px;
     background-color: transparent !important;
     transition: all 0.5s ease;
 
+}
+.list-product .harga{
+    font-weight: bold;
 }
 
 .list-product .card:hover {
@@ -226,9 +230,23 @@ html:hover .home .udl {
 .product .card-body {
     padding-top: 0px;
 }
+.product .carousel-item .card{
+    background-color: transparent !important;
+}
+.product .carousel {
+    background-color: transparent !important;
+}
 
 .product .poster{
     background-position: 100% 0% !important;
+    display: inline;
+    background-image: linear-gradient(#f1d302, #f1d302);
+    background-size: 0% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    transition-delay: 1s;
+    transition: background 1s ease-out;
+    padding: 0;
 }
 
 .back-element {
@@ -530,6 +548,10 @@ html:hover .home .udl {
     font-size: 28px;
     margin-right: 10px;
 }
+.add-product .img-preview{
+    padding-top: 20px;
+    margin: auto;
+}
 
 
 /* ------------------------------- Edit product ------------------------------ */
@@ -557,6 +579,10 @@ html:hover .home .udl {
     margin-left: auto;
     font-size: 28px;
     margin-right: 10px;
+}
+.edit-product .img-preview{
+    padding-top: 20px;
+    margin: auto;
 }
 
 /* --------------------------------- produk --------------------------------- */

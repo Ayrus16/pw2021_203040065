@@ -3,7 +3,6 @@
 Surya Putra Pratama
 203040065
 Shift Jum'at 10.00 - 11.00
-
 Tubes
 */
 ?>
@@ -30,6 +29,9 @@ $sepatu = query("SELECT * FROM sepatu WHERE id = $id")[0];
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
+
+    <!-- Icon -->
+    <link rel="icon" href="../assets/img/logo-color.png">
     <title>XRaa : Place to Buy Your Dream Shoes</title>
 </head>
 

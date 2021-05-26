@@ -65,16 +65,16 @@ $sepatu = query("SELECT * FROM sepatu");
                     </div>
                 </div>
 
-                <div class="col-md-7 poster" id="poster-product">
+                <div class="col-md-7 poster back-element" id="poster-product">
                     <!-- carousel -->
                     <div id="multi-item-example" class="carousel slide carousel-multi-item " data-ride="carousel">
 
                         <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner " role="listbox">
 
-                            <div class="carousel-item active">
+                            <div class="carousel-item active ">
                                 <div class="col-md-12">
-                                    <div class="card">
+                                    <div class="card ">
                                         <img class="card-img-top align-content-center" src="assets/img/sneakers.png" alt="Card image cap">
                                         <div class="card-body">
                                             <h3 class="card-title">Sneakers</h3>
@@ -84,7 +84,7 @@ $sepatu = query("SELECT * FROM sepatu");
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <div class="col-md-12">
                                     <div class="card">
                                         <img class="card-img-top align-content-center" src="assets/img/hoodie.png" alt="Card image cap">
@@ -96,7 +96,7 @@ $sepatu = query("SELECT * FROM sepatu");
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <div class="col-md-12">
                                     <div class="card">
                                         <img class="card-img-top align-content-center" src="assets/img/tshirt.png" alt="Card image cap">
@@ -108,7 +108,7 @@ $sepatu = query("SELECT * FROM sepatu");
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="carousel-item ">
                                 <div class="col-md-12">
                                     <div class="card">
                                         <img class="card-img-top align-content-center" src="assets/img/bag.png" alt="Card image cap">
@@ -149,6 +149,9 @@ $sepatu = query("SELECT * FROM sepatu");
                                     </div>
                                     <div class="card-content p-2 text-center">
                                         <?= $spt["nama"] ?>
+                                    </div>
+                                    <div class="card-content harga text-center">
+                                        $<?= $spt["harga"] ?>
                                     </div>
                                 </div>
                             </a>

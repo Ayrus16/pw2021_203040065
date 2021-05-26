@@ -34,7 +34,7 @@ Tubes
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
         <a class="navbar-brand" href="#">
             <img src="assets/img/logo-color.png" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
@@ -61,7 +61,6 @@ Tubes
                 <p class="copyright">Photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/s/photos/dark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
             </div>
         </section>
-
 
         <!-- About me -->
         <section class="about-me" id="about-me">

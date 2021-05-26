@@ -45,6 +45,8 @@ if (isset($_GET['cari'])) {
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
 
+    <!-- Icon -->
+    <link rel="icon" href="../assets/img/logo-color.png">
 </head>
 
 <body>
@@ -73,8 +75,8 @@ if (isset($_GET['cari'])) {
                         </div>
                         <div class="cell-6 offset-3">
                             <form action="" method="get">
-                                <input type="text" name="keyword" placeholder="Cari disini.." data-role="input" autofocus>
-                                <button type="submit" name="cari" class="button secondary outline"><i class="fas fa-search"></i></button>
+                                <input type="text" name="keyword" class="keyword" placeholder="Cari disini.." data-role="input" autofocus>
+                                <button type="submit" name="cari" class="button secondary outline tombol-cari"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -82,7 +84,7 @@ if (isset($_GET['cari'])) {
                 </div>
             </div>
         </div>
-        <table class="table row-border">
+        <table class="table row-border admin-container">
             <thead>
                 <tr>
                     <th scope="col">No</th>
@@ -124,6 +126,9 @@ if (isset($_GET['cari'])) {
             </tbody>
         </table>
 
+
+        <!-- MyScript -->
+        <script src="../js/script.js"></script>
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/6dd84d01cb.js" crossorigin="anonymous"></script>
         <!-- Metro - 4 -->

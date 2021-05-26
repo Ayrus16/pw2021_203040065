@@ -76,6 +76,8 @@ if (isset($_POST['submit'])) {
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
 
+    <!-- Icon -->
+    <link rel="icon" href="../assets/img/logo-color.png">
     <title>Admin Login</title>
 </head>
 

@@ -37,6 +37,8 @@ if (isset($_POST["register"])) {
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
 
+    <!-- Icon -->
+    <link rel="icon" href="../assets/img/logo-color.png">
     <title>Registrasi</title>
 </head>
 

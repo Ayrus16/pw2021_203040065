@@ -11,6 +11,8 @@ Tubes
 <?php
 // Menghubungkan dengan file php lainya
 require 'php/function.php';
+
+
 if (isset($_GET['keyword'])) {
   $keyword = $_GET['keyword'];
   $brand = ucwords($keyword);
@@ -22,6 +24,19 @@ if (isset($_GET['keyword'])) {
 } else {
   $sepatu = query("SELECT * FROM sepatu");
   $brand = 'All Product';
+}
+
+if (isset($_GET['cari-produk'])) {
+  $keyword = $_GET['keyword-cari'];
+  $sepatu = query(
+    "SELECT * FROM sepatu WHERE
+      nama LIKE '%$keyword%' OR
+      brand LIKE '%$keyword%' OR
+      warna LIKE '%$keyword%' OR
+      harga LIKE '%$keyword%' 
+      "
+  );
+  $brand = 'Result For "' . strtoupper($keyword) . '"';
 }
 ?>
 
@@ -58,8 +73,21 @@ if (isset($_GET['keyword'])) {
 
   <section class="more-product list-product">
     <div class="container">
-      <h2 class="udl"><?= $brand; ?></h2>
+
       <div class="grid">
+        <div class="row">
+          <div class="cell-md-4">
+            <h2 class="udl"><?= $brand; ?></h2>
+          </div>
+          <!-- Cari -->
+          <div class="cell-6 offset-2">
+            <form action="" method="get">
+              <input type="text" name="keyword-cari" class=" keyword" placeholder="Cari disini.." data-role="input" autofocus>
+              <button type="submit" name="cari-produk" class="button secondary outline tombol-cari-produk"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <!-- Akhir cari -->
+        </div>
         <div class="row">
           <?php
           foreach ($sepatu as $spt) :
@@ -72,6 +100,9 @@ if (isset($_GET['keyword'])) {
                   </div>
                   <div class="card-content p-2 text-center">
                     <?= $spt["nama"] ?>
+                  </div>
+                  <div class="card-content harga text-center">
+                    $<?= $spt["harga"] ?>
                   </div>
                 </div>
               </a>

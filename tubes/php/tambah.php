@@ -43,7 +43,8 @@ if (isset($_POST['tambah'])) {
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
 
-
+    <!-- Icon -->
+    <link rel="icon" href="../assets/img/logo-color.png">
 </head>
 
 <body style="background-color: #f1d302ff;">
@@ -77,12 +78,13 @@ if (isset($_POST['tambah'])) {
                             <div class="field">
                                 <!-- Form Harga -->
                                 <label for="harga">Price</label>
-                                <input type="text" data-role="input" name="harga" id="harga" class="mb-1" data-prepend="<span class='mif-dollar2'></span>" title="">
+                                <input type="number" data-role="input" name="harga" id="harga" class="mb-1" data-prepend="<span class='mif-dollar2'></span>" title="">
                             </div>
                             <div class="field">
                                 <!-- Form Gambar -->
                                 <label for="gambar">Picture</label>
-                                <input type="text" data-role="input" name="gambar" id="gambar" require>
+                                <input type="file" name="gambar" class="gambar" onchange="previewImage()">
+                                <img src="../assets/img/nophoto.png" style="display:block;" class="img-preview w-50">
                             </div>
                             <button type="submit" name="tambah" class="button success outline w-100">
                                 Add Product
@@ -94,6 +96,9 @@ if (isset($_POST['tambah'])) {
         </div>
     </section>
 
+
+    <!-- MyScript -->
+    <script src="../js/script.js"></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/6dd84d01cb.js" crossorigin="anonymous"></script>
     <!-- Metro - 4 -->
