@@ -6,9 +6,8 @@ https://github.com/Ayrus16/pw2021_203040065
 Pertemuan 3 - 19 Februari 2021
 Mempelajari Pengkondisian / percabangan di PHP
 */
-?>
 
-<?php
+
 /*
 Pengkondisian
 if else
@@ -26,6 +25,3 @@ if($x < 20){
 } else {
     echo "Salah";
 }
-
-
-?>

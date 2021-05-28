@@ -6,8 +6,8 @@ Shift Jum'at 10.00 - 11.00
 
 Tubes
 */
-?>
-<?php
+
+
 require 'function.php';
 
 if (isset($_POST["register"])) {

@@ -7,8 +7,8 @@ Pertemuan 11 - 29 April 2021
 
 Mempelajari Delete, Update, Search Data
 */
-?>
-<?php
+
+
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040065');
@@ -96,4 +96,3 @@ function cari($keyword)
   }
   return $rows;
 }
-?>

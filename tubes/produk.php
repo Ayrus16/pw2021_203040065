@@ -7,8 +7,8 @@ Shift Jum'at 10.00 - 11.00
 
 Tubes
 */
-?>
-<?php
+
+
 // Menghubungkan dengan file php lainya
 require 'php/function.php';
 

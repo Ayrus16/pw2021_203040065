@@ -7,10 +7,8 @@ Pertemuan 13 - 13 April 2021
 
 Menambah fitur live search dan upload gambar
 */
-?>
-?>
 
-<?php
+
 session_start();
 
 if (!isset($_SESSION['login'])) {
@@ -36,4 +34,3 @@ if (hapus($id) > 0) {
 } else {
   echo "Data Gagal dihapus";
 }
-?>

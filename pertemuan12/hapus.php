@@ -7,9 +7,8 @@ Pertemuan 12 - 6 April 2021
 
 Mempelajari Login
 */
-?>
 
-<?php
+
 session_start();
 
 if (!isset($_SESSION['login'])) {
@@ -35,4 +34,3 @@ if (hapus($id) > 0) {
 } else {
   echo "Data Gagal dihapus";
 }
-?>

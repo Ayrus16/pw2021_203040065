@@ -6,19 +6,19 @@ https://github.com/Ayrus16/pw2021_203040065
 Pertemuan 5 - 05 Maret 2021
 Mempelajari membuat dan menampilkan array
 */
-?>
-<?php
+
+
 // array
 // variable yang dapat memiliki banyak nilai
 // 
 
 // membuat array
 // cara lama
-$hari = array("Senin","Selasa", "Rabu");
+$hari = array("Senin", "Selasa", "Rabu");
 // cara baru
 $bulan = ["Januari", "Februari", "Maret"];
 
-$arr1= [123, "Tulisan", false];
+$arr1 = [123, "Tulisan", false];
 
 // Menampilkan array
 // var_dump / print_r()
@@ -35,8 +35,7 @@ $arr1= [123, "Tulisan", false];
 
 // menambahkan elemenn baru pada array
 var_dump($hari);
-$hari[]="Kamis";
-$hari[]="Jumat";
+$hari[] = "Kamis";
+$hari[] = "Jumat";
 echo "<br>";
 var_dump($hari);
-?>

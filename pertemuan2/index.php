@@ -6,10 +6,7 @@ https://github.com/Ayrus16/pw2021_203040065
 Pertemuan 2 - 12 Februari 2021
 Mempelajari Sintaks dasar php, standar output, variable dan tipe data
 */
-?>
 
-
-<?php
 // sintaks standar output
 // echo, print 
 // print_r  [biasanya untuk debugging]
@@ -57,4 +54,3 @@ Mempelajari Sintaks dasar php, standar output, variable dan tipe data
 // Logika
 // &&, ||, !
 // var_dump($x < 10 || $x % 2 == 0);
-?>

@@ -6,29 +6,28 @@ Shift Jum'at 10.00 - 11.00
 
 Modul-6 Session, Cookie, Encryption
 */
-?>
-<?php
+
+
 session_start();
-require'function.php';
+require 'function.php';
 // melakukan pengecekan apakah user sudah login
-if(isset($_SESSION['username'])){
+if (isset($_SESSION['username'])) {
     header("Location: admin.php");
     exit;
 }
 // Login
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $cek_user = mysqli_query(koneksi(),"SELECT * FROM user WHERE username = '$username' ");
+    $cek_user = mysqli_query(koneksi(), "SELECT * FROM user WHERE username = '$username' ");
     // mencocokan USERNAME dan PASSWORD
-    if(mysqli_num_rows($cek_user)>0){
+    if (mysqli_num_rows($cek_user) > 0) {
         $row = mysqli_fetch_assoc($cek_user);
-        if($password == $row['password']){
+        if ($password == $row['password']) {
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['hash'] = $_POST['id'];
-
         }
-        if($row['id'] == $_SESSION['hash']){
+        if ($row['id'] == $_SESSION['hash']) {
             header("Location: admin.php");
             die;
         }
@@ -47,7 +46,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="css/style.css">
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
-    
+
     <title>Latihan6 | 203040065</title>
 </head>
 
@@ -55,15 +54,15 @@ if(isset($_POST['submit'])){
     <div class="container">
         <div class="grid">
             <form action="" method="post">
-            <?php if(isset($error)):?>
-            <p style="color: red; font-style:italic;">Username atau Password salah</p>
-            <?php endif; ?>
+                <?php if (isset($error)) : ?>
+                    <p style="color: red; font-style:italic;">Username atau Password salah</p>
+                <?php endif; ?>
                 <label for="username">Username</label>
                 <input type="text" name="username">
 
                 <label for="password">Password</label>
                 <input type="password" name="password">
-                
+
                 <div class="remember">
                     <input type="checkbox" name="remember">
                     <label for="remember">Remember me</label>
@@ -73,7 +72,7 @@ if(isset($_POST['submit'])){
             </form>
         </div>
     </div>
-    
+
     <!-- Metro - 4 -->
     <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
 </body>

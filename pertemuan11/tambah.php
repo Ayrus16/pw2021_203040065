@@ -7,9 +7,8 @@ Pertemuan 11 - 29 April 2021
 
 Mempelajari Delete, Update, Search Data
 */
-?>
 
-<?php
+
 require 'function.php';
 
 // cek apakah tombol sudah di tekan

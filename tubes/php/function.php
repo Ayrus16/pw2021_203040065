@@ -6,9 +6,8 @@ Shift Jum'at 10.00 - 11.00
 
 Tubes
 */
-?>
 
-<?php
+
 // Koneksi ke Database
 function koneksi()
 {
@@ -175,4 +174,3 @@ function registrasi($data)
 
     return mysqli_affected_rows($conn);
 }
-?>

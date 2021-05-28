@@ -7,8 +7,8 @@ Pertemuan 10 - 23 April 2021
 
 Mempelajari Koneksi DB
 */
-?>
-<?php
+
+
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040065');
@@ -49,4 +49,3 @@ function tambah($data)
   echo mysqli_error($conn);
   return mysqli_affected_rows($conn);
 }
-?>

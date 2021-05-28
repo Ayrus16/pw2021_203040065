@@ -6,9 +6,8 @@ https://github.com/Ayrus16/pw2021_203040065
 Pertemuan 4 - 26 Februari 2021
 Mempelajari function date, time, mktime, dan strtotime
 */
-?>
 
-<?php
+
 // Date
 // untuk menampilkan tanggal dengan format tertentu
 // echo date("ls, d-M-Y");
@@ -27,5 +26,3 @@ Mempelajari function date, time, mktime, dan strtotime
 
 // strtotime
 echo date("l", strtotime("9 sep 2002"));
-
-?>

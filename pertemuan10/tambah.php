@@ -7,9 +7,8 @@ Pertemuan 10 - 23 April 2021
 
 Mempelajari Koneksi DB dan Insert Data
 */
-?>
 
-<?php
+
 require 'function.php';
 
 // cek apakah tombol sudah di tekan

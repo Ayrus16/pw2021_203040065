@@ -6,17 +6,17 @@ Shift Jum'at 10.00 - 11.00
 
 Modul-5 CRUD dan Searching
 */
-?>
-<?php
+
+
 // Menghubungkan dengan file php lainya
-require'function.php';
-if(isset($_POST['tambah'])){
-    if(tambah($_POST)>0){
+require 'function.php';
+if (isset($_POST['tambah'])) {
+    if (tambah($_POST) > 0) {
         echo "<script>
         alert('Data Berhasil ditambahkan!');
         document.location.href='admin.php';
         </script>";
-    } else{
+    } else {
         echo "<script>
         alert('Data Gagal ditambahkan!');
         document.location.href='admin.php';
@@ -27,6 +27,7 @@ if(isset($_POST['tambah'])){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,9 +38,10 @@ if(isset($_POST['tambah'])){
 
 
 </head>
+
 <body>
     <div class="container">
-    
+
         <div class="add" style="padding-top: 20px;">
             <a href="admin.php"><button class="button alert outline">Cancel</button></a>
         </div>
@@ -57,20 +59,20 @@ if(isset($_POST['tambah'])){
             <input type="text" data-role="input" name="warna" id="warna" require>
             <!-- Form Harga -->
             <label for="harga">Price</label>
-            <input type="text" data-role="input" name="harga" id="harga" 
-            class="mb-1" data-prepend="<span class='mif-dollar2'></span>" title="">
+            <input type="text" data-role="input" name="harga" id="harga" class="mb-1" data-prepend="<span class='mif-dollar2'></span>" title="">
             <!-- Form Gambar -->
             <label for="gambar">Picture</label>
             <input type="text" data-role="input" name="gambar" id="gambar" require>
 
-            <button type="submit" name="tambah" class="button success outline" >
-            Add Product
+            <button type="submit" name="tambah" class="button success outline">
+                Add Product
             </button>
 
         </form>
     </div>
-<!-- Metro - 4 -->
-<script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <!-- Metro - 4 -->
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
 
 </body>
+
 </html>

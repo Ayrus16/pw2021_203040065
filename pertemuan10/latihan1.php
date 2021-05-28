@@ -7,8 +7,8 @@ Pertemuan 10 - 23 April 2021
 
 Mempelajari Koneksi DB
 */
-?>
-<?php
+
+
 // Koneksi ke database dan pilih database
 $conn = mysqli_connect('localhost', 'root', '', 'pw_203040065');
 // Query ini tabel mahasiswa

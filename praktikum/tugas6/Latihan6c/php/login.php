@@ -6,8 +6,8 @@ Shift Jum'at 10.00 - 11.00
 
 Modul-6 Session, Cookie, Encryption
 */
-?>
-<?php
+
+
 session_start();
 require 'function.php';
 

@@ -6,9 +6,7 @@ https://github.com/Ayrus16/pw2021_203040065
 Pertemuan 3 - 19 Februari 2021
 Mempelajari Pengulangan di PHP
 */
-?>
 
-<?php
 /*
 pengulangan
 for
@@ -36,8 +34,10 @@ foreach : pengulangan khusus array
 // } while ($i < 5);
 
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,30 +45,32 @@ foreach : pengulangan khusus array
     <title>Latihan 1</title>
 
     <style>
-    .warna-baris {
-        background-color : silver;
-    }
+        .warna-baris {
+            background-color: silver;
+        }
     </style>
 
 </head>
+
 <body>
     <table border="1" cellpadding="10" cellspacing="0">
 
-    <!-- pengulangan menggunakan for -->
-        <?php for($i = 1 ; $i <= 5; $i++) :?>
-            <?php if($i % 2 == 0) :?>
-            <tr class="warna-baris">
-            <?php else: ?>
+        <!-- pengulangan menggunakan for -->
+        <?php for ($i = 1; $i <= 5; $i++) : ?>
+            <?php if ($i % 2 == 0) : ?>
+                <tr class="warna-baris">
+                <?php else : ?>
                 <tr>
-            <?php endif; ?>
-                <?php for($j = 1 ; $j <= 5; $j++):?>
-                    <td><?="$i, $j" ?></td>
+                <?php endif; ?>
+                <?php for ($j = 1; $j <= 5; $j++) : ?>
+                    <td><?= "$i, $j" ?></td>
                 <?php endfor; ?>
-            </tr>
-        <?php endfor; ?>
+                </tr>
+            <?php endfor; ?>
 
 
 
     </table>
 </body>
+
 </html>

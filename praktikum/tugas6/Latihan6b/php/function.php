@@ -6,37 +6,37 @@ Shift Jum'at 10.00 - 11.00
 
 Modul-6 Session, Cookie, Encryption
 */
-?>
 
-<?php
+
 // Koneksi Database
-function koneksi(){
-    $conn = mysqli_connect("localhost", "root","");
+function koneksi()
+{
+    $conn = mysqli_connect("localhost", "root", "");
     mysqli_select_db($conn, "pw_tubes_203040065");
 
     return $conn;
-
 }
 
-function query($sql){
+function query($sql)
+{
     $conn = koneksi();
     $result = mysqli_query($conn, "$sql");
 
-    $rows=[];
-    while ($row = mysqli_fetch_assoc($result)){
-        $rows[]=$row;
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
     }
     return $rows;
-
 }
-function tambah($data){
-    $conn=koneksi();
+function tambah($data)
+{
+    $conn = koneksi();
 
-    $nama= htmlspecialchars($data['nama']);
-    $brand= htmlspecialchars($data['brand']);
-    $warna= htmlspecialchars($data['warna']);
-    $harga= htmlspecialchars($data['harga']);
-    $gambar= htmlspecialchars($data['gambar']);
+    $nama = htmlspecialchars($data['nama']);
+    $brand = htmlspecialchars($data['brand']);
+    $warna = htmlspecialchars($data['warna']);
+    $harga = htmlspecialchars($data['harga']);
+    $gambar = htmlspecialchars($data['gambar']);
 
     $query = "INSERT INTO sepatu VALUES
                 ('','$gambar','$nama','$brand','$warna','$harga')";
@@ -45,7 +45,8 @@ function tambah($data){
     return mysqli_affected_rows($conn);
 }
 
-function hapus($id){
+function hapus($id)
+{
     $conn = koneksi();
 
     mysqli_query($conn, "DELETE FROM sepatu WHERE id=$id");
@@ -53,15 +54,16 @@ function hapus($id){
 }
 
 
-function ubah($data){
-    $conn=koneksi();
+function ubah($data)
+{
+    $conn = koneksi();
 
-    $id= htmlspecialchars($data['id']);
-    $nama= htmlspecialchars($data['nama']);
-    $brand= htmlspecialchars($data['brand']);
-    $warna= htmlspecialchars($data['warna']);
-    $harga= htmlspecialchars($data['harga']);
-    $gambar= htmlspecialchars($data['gambar']);
+    $id = htmlspecialchars($data['id']);
+    $nama = htmlspecialchars($data['nama']);
+    $brand = htmlspecialchars($data['brand']);
+    $warna = htmlspecialchars($data['warna']);
+    $harga = htmlspecialchars($data['harga']);
+    $gambar = htmlspecialchars($data['gambar']);
 
     $query = "UPDATE sepatu SET
                 img='$gambar',
@@ -74,14 +76,15 @@ function ubah($data){
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }
-function registrasi($data){
+function registrasi($data)
+{
     $conn = koneksi();
     $username = strtolower(stripslashes($data["username"]));
     $password = mysqli_real_escape_string($conn, $data["password"]);
 
     // cek username sudah ada atau belum
     $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username' ");
-    if(mysqli_fetch_assoc($result)){
+    if (mysqli_fetch_assoc($result)) {
         echo "<script>
         alert('Username sudah di gunakan');
         </script>";
@@ -97,4 +100,3 @@ function registrasi($data){
 
     return mysqli_affected_rows($conn);
 }
-?>

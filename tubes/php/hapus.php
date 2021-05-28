@@ -6,8 +6,8 @@ Shift Jum'at 10.00 - 11.00
 
 Tubes
 */
-?>
-<?php
+
+
 session_start();
 
 if (!isset($_SESSION["username"])) {
@@ -29,4 +29,3 @@ if (hapus($id) > 0) {
         document.location.href='admin.php';
         </script>";
 }
-?>

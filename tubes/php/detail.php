@@ -5,8 +5,8 @@ Surya Putra Pratama
 Shift Jum'at 10.00 - 11.00
 Tubes
 */
-?>
-<?php
+
+
 if (!isset($_GET['id'])) {
     header("location: ../index.php");
     exit;

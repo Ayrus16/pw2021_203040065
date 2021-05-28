@@ -7,10 +7,9 @@ Pertemuan 12 - 6 April 2021
 
 Mempelajari Login
 */
-?>
-<?php
+
+
 session_start();
 session_destroy();
 header('Location: login.php');
 exit;
-?>

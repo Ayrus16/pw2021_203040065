@@ -7,9 +7,8 @@ Pertemuan 12 - 6 April 2021
 
 Mempelajari Login
 */
-?>
 
-<?php
+
 session_start();
 
 if (!isset($_SESSION['login'])) {

@@ -7,8 +7,8 @@ Pertemuan 13 - 13 April 2021
 
 Menambah fitur live search dan upload gambar
 */
-?>
-<?php
+
+
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040065');
@@ -253,4 +253,3 @@ function registrasi($data)
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
-?>

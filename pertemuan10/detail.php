@@ -7,8 +7,8 @@ Pertemuan 10 - 23 April 2021
 
 Mempelajari Koneksi DB
 */
-?>
-<?php
+
+
 require 'function.php';
 // ambil id dari URL
 $id = $_GET['id'];
