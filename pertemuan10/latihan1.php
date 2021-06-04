@@ -10,7 +10,7 @@ Mempelajari Koneksi DB
 
 
 // Koneksi ke database dan pilih database
-$conn = mysqli_connect('localhost', 'root', '', 'pw_203040065');
+$conn = mysqli_connect("localhost", "pw20065", "#Akun#203040065#", "pw20065_pw_203040065");
 // Query ini tabel mahasiswa
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
 // Ubah data ke dalam array
