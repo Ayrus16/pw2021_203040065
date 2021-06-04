@@ -11,7 +11,8 @@ Mempelajari Login
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'pw_203040065');
+  return mysqli_connect("localhost", "pw20065", "#Akun#203040065#", "pw20065_pw_203040065");
+  // return mysqli_connect('localhost', 'root', '', 'pw_203040065');
 }
 
 function query($query)

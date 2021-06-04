@@ -11,8 +11,10 @@ Modul-5 CRUD dan Searching
 // Koneksi Database
 function koneksi()
 {
-    $conn = mysqli_connect("localhost", "root", "");
-    mysqli_select_db($conn, "pw_tubes_203040065");
+    $conn = mysqli_connect("localhost", "pw20065", "#Akun#203040065#");
+    mysqli_select_db($conn, "pw20065_pw_tubes_203040065");
+    // $conn = mysqli_connect("localhost", "root", "");
+    // mysqli_select_db($conn, "pw_tubes_203040065");
 
     return $conn;
 }
